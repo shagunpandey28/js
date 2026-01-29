@@ -32,8 +32,39 @@ const myFunction = function(){
     
 }
 
-const id = Symbol('123');
-console.log(id);
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack :-> copy milta h , Heap :-> reference millta h
+// Stack (Primitive), Heap(Non-Primitive)
+
+let myYoutubeName = "ShagunPandey"
+let anotherName = myYoutubeName
+
+anotherName = "Pandey"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+
+let userOne = {
+    email :  "user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "shagun@gmail.com"
+
+console.log(userTwo);
+console.log(userOne.email);
+console.log(userTwo.email)
+
+
+
+
+// const id = Symbol('123');
+// console.log(id);
 
 
 
